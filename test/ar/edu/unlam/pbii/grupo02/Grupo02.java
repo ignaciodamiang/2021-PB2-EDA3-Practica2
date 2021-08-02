@@ -1,10 +1,16 @@
 package ar.edu.unlam.pbii.grupo02;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import ar.edu.unlam.pbii.grupo01.Cliente;
+import ar.edu.unlam.pbii.grupo01.ClienteCable;
+import ar.edu.unlam.pbii.grupo01.ClienteTelefonia;
+import ar.edu.unlam.pbii.grupo01.Empresa;
+import ar.edu.unlam.pbii.grupo01.Premium;
+import ar.edu.unlam.pbii.grupo02.Auto;
+import ar.edu.unlam.pbii.grupo02.Moto;
 
 public class Grupo02 {
 
@@ -67,7 +73,6 @@ public class Grupo02 {
 		actual.agregarVehiculo(new Tren(15, 250, 100, 45.826541, 3.965412));
 
 		assertEquals((Integer) 10, actual.getCantidadDeVehiculos());
-		
 		assertFalse(actual.hayCoalicion());
 		
 	}
